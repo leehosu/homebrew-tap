@@ -5,23 +5,23 @@
 class Commitgen < Formula
   desc "AI-powered Git commit message generator"
   homepage "https://github.com/leehosu/commitgen"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/leehosu/commitgen/releases/download/v0.2.1/commitgen_0.2.1_Darwin_x86_64.tar.gz"
-      sha256 "85ddf2e42aa3803b6f655e12a95937a5c507e6fd1e01a33162811103f2ae3702"
+      url "https://github.com/leehosu/commitgen/releases/download/v0.3.0/commitgen_0.3.0_Darwin_x86_64.tar.gz"
+      sha256 "bc1a9d6257553a9cd3f2ad1a3206556ff359c2499013c9ba18e83ad71db8c360"
 
       def install
         bin.install "commitgen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/leehosu/commitgen/releases/download/v0.2.1/commitgen_0.2.1_Darwin_arm64.tar.gz"
-      sha256 "91e9a3a3fb2e0c8a12ccbda8fc5fe7e2eb73699b666f9e3ebbacd959bfeba908"
+      url "https://github.com/leehosu/commitgen/releases/download/v0.3.0/commitgen_0.3.0_Darwin_arm64.tar.gz"
+      sha256 "8f9ae07460d7f840a9b6b1ba7d6afb761cea6942a944c9a51acc207df2378494"
 
       def install
         bin.install "commitgen"
@@ -31,15 +31,15 @@ class Commitgen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leehosu/commitgen/releases/download/v0.2.1/commitgen_0.2.1_Linux_x86_64.tar.gz"
-      sha256 "ea78a8163e0def4333dda5e85ea68bbddbe8979eddaadc304717e6c361ce5a72"
+      url "https://github.com/leehosu/commitgen/releases/download/v0.3.0/commitgen_0.3.0_Linux_x86_64.tar.gz"
+      sha256 "0bbf6a692614f950409f98fc96f696690eb74b45b8c19af3077017f7905a4b46"
       def install
         bin.install "commitgen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leehosu/commitgen/releases/download/v0.2.1/commitgen_0.2.1_Linux_arm64.tar.gz"
-      sha256 "8860254d2b304230191b82c459de6e65c083ef1d6647108841f91c5b67d69d31"
+      url "https://github.com/leehosu/commitgen/releases/download/v0.3.0/commitgen_0.3.0_Linux_arm64.tar.gz"
+      sha256 "bb1ef0679e1c53c1c161173a848a51cd8e23f6f59860ffa61156a3df55538b09"
       def install
         bin.install "commitgen"
       end
