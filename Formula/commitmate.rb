@@ -5,23 +5,23 @@
 class Commitmate < Formula
   desc "AI-powered Git commit message generator"
   homepage "https://github.com/leehosu/commitmate"
-  version "1.1.2"
+  version "1.1.3"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/leehosu/commitmate/releases/download/v1.1.2/commitmate_1.1.2_Darwin_x86_64.tar.gz"
-      sha256 "42b6dddf6a6d85776a883af2771df16b1237cc9b1b3187f26626c9caed014851"
+      url "https://github.com/leehosu/commitmate/releases/download/v1.1.3/commitmate_1.1.3_Darwin_x86_64.tar.gz"
+      sha256 "249e77494684b1f83a1f851e6de350237b03ccf2c39904347651e6ce8d436f45"
 
       def install
         bin.install "commitmate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/leehosu/commitmate/releases/download/v1.1.2/commitmate_1.1.2_Darwin_arm64.tar.gz"
-      sha256 "99151e885cb77fdffbcd4fd4f0375d8428801f5ee07c54ad4810ca552c0c85a7"
+      url "https://github.com/leehosu/commitmate/releases/download/v1.1.3/commitmate_1.1.3_Darwin_arm64.tar.gz"
+      sha256 "2fe166dac088c55529e9dbc1d64d09fa258821cddddc592560c0200c4d4fe98a"
 
       def install
         bin.install "commitmate"
@@ -31,15 +31,15 @@ class Commitmate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leehosu/commitmate/releases/download/v1.1.2/commitmate_1.1.2_Linux_x86_64.tar.gz"
-      sha256 "83ec0c9bffcc0ab6b2bdcfc8d67121cf60d1cf680c8b7feeb0c3d43dccac72ab"
+      url "https://github.com/leehosu/commitmate/releases/download/v1.1.3/commitmate_1.1.3_Linux_x86_64.tar.gz"
+      sha256 "4a180f7bde8a7a4b5899f5eb628da56295b8bf30e78f7b69b5c22fda9c12a82e"
       def install
         bin.install "commitmate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leehosu/commitmate/releases/download/v1.1.2/commitmate_1.1.2_Linux_arm64.tar.gz"
-      sha256 "b5a8924d66d308f2bd82b74c6e5efd3f5e5bea6e20de0ec732d3500875d4cb8b"
+      url "https://github.com/leehosu/commitmate/releases/download/v1.1.3/commitmate_1.1.3_Linux_arm64.tar.gz"
+      sha256 "d42f0c88252970cb620c272ccb0046b2c33d892871e703e5b512ffa838437def"
       def install
         bin.install "commitmate"
       end
