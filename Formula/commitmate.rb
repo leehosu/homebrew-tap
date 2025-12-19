@@ -13,7 +13,7 @@ class Commitmate < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/leehosu/commitmate/releases/download/v1.0.0/commitmate_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "af7a5746790bf583411645f000807606332ae65eac760272ccaa7c7451f51599"
+      sha256 "a22eb31b27a94e6ca8a2e41b67a62a19c02419595a3de1cf3b9ea5cd979805bd"
 
       def install
         bin.install "commitmate"
@@ -21,7 +21,7 @@ class Commitmate < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/leehosu/commitmate/releases/download/v1.0.0/commitmate_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "4ea7a4f6085a7b6c6a37b0ac954c062b8c0bdfcfa83dca375ad3085ba151cf30"
+      sha256 "77f6bc8d72ac4d78c5c1c8153913f28648ab9d65ba11f9421ab99f6efa0d556c"
 
       def install
         bin.install "commitmate"
@@ -32,14 +32,14 @@ class Commitmate < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/leehosu/commitmate/releases/download/v1.0.0/commitmate_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "3a3f016713a6d629521e8ef9eb7eaa823485e0e52c1446346dd8dadf895e3524"
+      sha256 "278ad17ea0f79eb6a89db51abf63615a28c743b6c8ee757340a2385ca0da043f"
       def install
         bin.install "commitmate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/leehosu/commitmate/releases/download/v1.0.0/commitmate_1.0.0_Linux_arm64.tar.gz"
-      sha256 "3af57c2bb7d521b14d2b625e2f0ec6f6adc1359d8df448497c0ac2c0f30c01cb"
+      sha256 "b171a31c4c3ea3ae8dce99c7e35ee7567ce0ca5d9f1c9d06231b512df8a04927"
       def install
         bin.install "commitmate"
       end
